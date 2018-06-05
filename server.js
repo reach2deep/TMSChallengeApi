@@ -49,7 +49,7 @@ app.use(bodyParser.json());
 app.use('/api', routes);
 
 // Listen for requests
-var server = app.listen(3000, function() {
-  //var port = server.address().port;
-  console.log('Service running on port ' + 3000);
+var server = app.listen( port, function() {
+  var port = server.address().port;
+  console.log('Service running on port ' + port);
 });
